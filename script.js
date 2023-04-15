@@ -45,7 +45,10 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.home-content, .heading', { origin:'top' });
+
 ScrollReveal().reveal('.home-content h1, .profile-img', { origin:'left' });
+
+
 
 ScrollReveal().reveal('.profile-heading, .profile-content', { origin:'right'});
 
