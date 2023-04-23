@@ -96,10 +96,12 @@ padding: 1rem;
     justify-content: center;
     align-items: center;
     transition: .5s ease-out;
+
 }
     
 .home-img img{
-    width: 30vw;
+    width: 25vw;
+
     animation: floatImage 4s ease-in-out infinite;
     z-index: 100;
 }
@@ -141,6 +143,9 @@ padding: 1rem;
    
 }
 
+.home-wave-bottom .shape-fill {
+    fill: var(--second-bg-color);
+}
 
 
 .cube {
@@ -266,7 +271,7 @@ padding: 1rem;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-  
+    position: relative;
     background: var(--second-bg-color);
 }
 
@@ -280,6 +285,7 @@ padding: 1rem;
 .profile-img img{
     width: 30vw;
     animation: floatImage 4s ease-in-out infinite;
+    z-index: -100;
    
 }
 
@@ -287,6 +293,8 @@ padding: 1rem;
     text-align: center;
     font-size: 4.5rem;
 }
+
+
 
 
 
@@ -363,15 +371,15 @@ padding: 1rem;
 
 
 .experience{
-    
     background: var(--second-bg-color);
 }
-
 
 .experience-heading{
     text-align: center;
     font-size: 4.5rem;
 }
+
+
 
 .experience span{
    color: aqua;
@@ -383,7 +391,6 @@ padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-   
    
 }
 
@@ -397,11 +404,19 @@ padding: 1rem;
     color: var(--main-color);
     font-size: 2.6rem;
 }
+
 .exp-box p{
     font-size: 1.8rem;
     text-align: justify;
-    
+    flex-grow: 5;
 }
+
+.exp-box h2{
+    text-align: center;
+}
+
+
+
 
 .exp-box{
     color: var(--text-color);
@@ -600,12 +615,13 @@ padding: 1rem;
     .cube {
     
     position: absolute;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     transform-style: preserve-3d;
     z-index: -100;
     transform: rotateX(-30deg);
     animation: animate 4s linear infinite;
+    
     }
 
     .cube div span{
@@ -615,7 +631,8 @@ padding: 1rem;
         width: 100%;
         height: 100%;
         background: linear-gradient(#151515, #00ec00);
-        transform: rotateY(calc(90deg * var(--i))) translateZ(75px);
+        transform: rotateY(calc(90deg * var(--i))) translateZ(50px);
+    
     }
 
     .top::before {
@@ -623,8 +640,8 @@ padding: 1rem;
         position: absolute;
         top: 0;
         left: 0;
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
         background: #00FF00;
         transform: translateZ(-180px);
         filter: blur(20px);
@@ -641,10 +658,10 @@ padding: 1rem;
         position: absolute;
         top: 0;
         left: 0;
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
         background: #222;
-        transform: rotateX(90deg) translateZ(75px);
+        transform: rotateX(90deg) translateZ(50px);
         z-index: -100;
     }
 
@@ -694,7 +711,7 @@ padding: 1rem;
     
 
     .home-img img {
-        width: 60vw;
+        width: 45vw;
         margin-top: 4rem;
     }
 
@@ -717,6 +734,8 @@ padding: 1rem;
     .projects-container{
         grid-template-columns: repeat(1, 1fr);
     }
+
+
 
 }
 
