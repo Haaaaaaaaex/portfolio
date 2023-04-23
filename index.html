@@ -10,16 +10,26 @@
 
         <!--External CSS-->
         <link rel="stylesheet" href="style.css">
+        
 
         <!--Icons-->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    
+
+        <!--email.JS-->
+        <script type="text/javascript" src="email.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function(){
+                 emailjs.init("PHZzLBczZ7Y9Utdyt");
+                })();
+        </script>
     </head>
     
     <body>
         <!--HEADER DESIGN-->
         <header class="header">
+            
             <a href="#" class="logo">Pameh</a>
         
             <i class='bx bx-menu' id="menu-icon"></i>
@@ -33,37 +43,54 @@
 
             </nav>
         </header>
-
-
+        
+       
         <!--home section-->
         <section class="home" id="home">
+            
             <div class="home-content">
                 <h3>Greetings!</h3>
-                <h1>I am Renz Christian</h1>
+                <h1>I am Renz Christian </h1>
                 <h3>And I'm <span class="multiple-text"></span> </h3>
                 <p>I am Renz Christian A. Palma, A fresh graduate from Cavite State University - Main Campus. Throughout my academic years I've worked on projects focusing on Web Design 
-                        and Android Development. </p>
+                        and Android Development. </p>  
                         <!--social media icons-->
                      <div class="social-media">
                         <a href="https://www.linkedin.com/in/renz-christian-palma-72b1b8238/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
                         <a href="https://www.instagram.com/nothaex/" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
                         <a href="https://www.facebook.com/xtncxon/"target="_blank"><i class='bx bxl-facebook-circle' ></i></a>
+                        <a href="https://github.com/Haaaaaaaaex"target="_blank"><i class='bx bxl-github'></i></a>
                      </div>
-                     <a href="#" class="btn">Download CV</a>
+                     <a href="CV/Curriculum Vitae.pdf" class="btn" download="Curriculum Vitae.pdf">Download CV</a>
+                     
             </div>
 
             <div class="home-img">
-                <img src="imgs/profile2-removebg-preview.png">
+                <img src="imgs/profile-cs6-2.png">
             </div>
-            
+           
+            <div class="cube">
+                <div class="top"></div>
+                <div>
+                    <span style="--i:0;"></span>
+                    <span style="--i:1;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:3;"></span>
+                </div>
+            </div>
+        
+
+
         </section>
 
 
         <!--profile section-->
         <section class="profile" id="profile">
+            <!--profile image-->
             <div class="profile-img">
-                <img src="imgs/profile-bg.png">
+                <img src="imgs/profile-bg-cs6-1.png">
             </div>
+            <!--profile container-->
             <div class="profile-content">
                 <h2 class="profile-heading">About <span>Me</span></h2>
                 <h3>Education</h3>
@@ -80,9 +107,9 @@
                 <p> Aside from learning, I love to spent my hours listening to rock music! listening to my favorite songs or exploring
                     bands. I also play games with genres MMORPG and MOBA, not a fan of FPS hehe. And lastly, coffee... anytime.</p>
             </div>
-        
+          
         </section>
-
+        
 
         <!--Skills-->
 
@@ -131,32 +158,29 @@
         <section class="experience" id="experience">
             <h2 class="experience-heading">Experience</h2>
 
-            <div class="experience-container">
-
-                <div class="exp-box">
-                    <img src="imgs/neodocto-logo.png" alt="neodocto-logo">
+            <div class="exp-container">
+                <div class="exp-wrapper">
+                    <div class="exp-box">
+                        <img src="imgs/neodocto-logo.png" alt="recordly">
+                        <h2><span>On The Job Training</span></h2>
+                        <h3>NeoDocto</h3>
+                        <p>A work from home on-the-job training at NeoDocto
+                            Private Services Limited located at Central Business District, 245 Park Avenue, 39th
+                            Floor, Manhattan, New York, 10167. I started the training on February 21,
+                            2022 and ended last May 21, 2022.</p>
+                       <br><br>
+                       <h3>Position</h3>
+                       <p>I was a <span>Web Developer Intern</span>  and was part of SESSION 12 team. We developed websites on Wordpress that were discussed during 
+                          SMART sessions and as an intern I am executing task given by my team leader with no delay. I also became part of their Digital
+                          Marketing Program. 
+                       </p>
+                    </div>
                     
                 </div>
-                <div class="experience-layer">
-                    <h3>NeoDocto</h3>
-                    <p>A work from home on-the-job training at NeoDocto
-                        Private Services Limited located at Central Business District, 245 Park Avenue, 39th
-                        Floor, Manhattan, New York, 10167. I started the training on February 21,
-                        2022 and ended last May 21, 2022.</p>
-                      
-                </div>
-
-                <div class="experience-layer">
-                    <h3>Position</h3>
-                    <p>I was a Web Developer Intern and was part of SESSION 12 team, We developed websites on Wordpress that were discussed during 
-                        SMART sessions and as an intern I am executing task given by my team leader with no delay. I also became part of their Digital
-                        Marketing Program.
-                    </p>
-                      
-                </div>
-
-               
+                
             </div>
+    
+            
           
         </section>
 
@@ -167,12 +191,12 @@
             <div class="projects-container">
 
                 <div class="projects-box">
-                    <img src="imgs/projects/recordly/logo.png" alt="recordly">
+                    <img src="imgs/projects/recordly/logo5.png" alt="recordly">
                     <div class="projects-layer">
                         <h4>Capstone Project</h4>
                         <p>Recordly: An Android Based Mobile Attendance Monitoring System for Department of Information Technology
                             Faculty of Cavite State University - Main Campus</p>
-                            <a href="#"><i class='bx bx-link-external' ></i></a>
+                            <a href="recordly.html"><i class='bx bx-link-external' ></i></a>
                     </div>
                 </div>
         
@@ -186,21 +210,25 @@
 
         <section class="contact" id="contact">
             <h2 class="contact-heading">Contact <span>me</span> </h2>
-            <form action="#" class="form">
+
+            <form action="javascript:;" onsubmit="sendEmail(this)" class="form">
                 <div class="input-box">
-                    <input type="text" placeholder="Full name">
-                    <input type="number" placeholder="Mobile number">
+                    <input type="text"  id="user-name" placeholder="Full name">
+                    <input type="number" id="mobile-number" placeholder="Mobile number">
                 </div>
 
 
                 <div class="input-box">
-                    <input type="email" placeholder="Email">
-                    <input type="text" placeholder="Email subject">
+                    <input type="email" id="email" placeholder="Email">
+                    <input type="text" id="email-subject" placeholder="Email subject">
                 </div>
 
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
                 <input type="submit" value="Send Message" class="btn">
+
             </form>
+
+            
         </section>
 
 
